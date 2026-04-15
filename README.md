@@ -10,6 +10,39 @@ Production-oriented monorepo for a multi-tenant AI agent SaaS platform.
 - `packages/ai-core`: Provider abstraction (`Claude`, `OpenAI`, extensible).
 - `infra`: Docker and deployment scaffolding.
 
+## Open the website locally
+
+### Option A: run only the web app (quickest)
+
+```bash
+npm install
+npm run dev:web
+```
+
+Then open:
+- `http://localhost:3000`
+
+### Option B: run web + API + database with Docker
+
+```bash
+docker compose up --build
+```
+
+Then open:
+- Web: `http://localhost:3000`
+- API health check: `http://localhost:4000/health`
+
+### If `npm install` fails with registry/proxy errors
+
+Set registry explicitly and retry:
+
+```bash
+npm config set registry https://registry.npmjs.org/
+npm install
+```
+
+If your environment is behind a corporate proxy, set `HTTPS_PROXY`/`HTTP_PROXY` correctly before installing dependencies.
+
 ## Product Architecture
 
 ### Backend domains
