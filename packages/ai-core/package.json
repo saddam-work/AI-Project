@@ -1,0 +1,14 @@
+{
+  "name": "@ai-dashboard/ai-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "dev": "echo 'ai-core: no dev'",
+    "build": "echo 'ai-core: build handled by tsup in future'",
+    "lint": "echo 'lint placeholder'",
+    "typecheck": "echo 'typecheck placeholder'"
+  }
+}
