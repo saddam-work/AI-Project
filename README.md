@@ -43,26 +43,6 @@ npm install
 
 If your environment is behind a corporate proxy, set `HTTPS_PROXY`/`HTTP_PROXY` correctly before installing dependencies.
 
-## Vercel troubleshooting (if deployed URL shows 404)
-
-If your Vercel URL opens but shows **404 Not Found**, the project is usually pointing at the wrong folder in a monorepo.
-
-Use these settings in Vercel Project Settings:
-
-- **Root Directory**: `apps/web`
-- **Framework Preset**: `Next.js`
-- **Install Command**: `npm install`
-- **Build Command**: `npm run build`
-- **React compatibility**: use `react@18.2.0` and `react-dom@18.2.0` with `next@15.0.0` to avoid peer dependency resolution errors.
-- **Output Directory**: (leave default for Next.js)
-
-After changing settings:
-1. Go to **Deployments** → select latest deployment.
-2. Click **Redeploy**.
-3. Open your domain again.
-
-If it still fails, check **Project Settings → Environment Variables** and ensure required values are present for production.
-
 ## Can I preview directly from GitHub?
 
 Yes — but not from GitHub repository pages alone for this app stack.
