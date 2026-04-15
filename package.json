@@ -1,0 +1,17 @@
+{
+  "name": "ai-agent-dashboard",
+  "private": true,
+  "version": "0.2.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @ai-dashboard/api & npm run dev -w @ai-dashboard/web",
+    "dev:web": "npm run dev -w @ai-dashboard/web",
+    "dev:api": "npm run dev -w @ai-dashboard/api",
+    "build": "npm run build --workspaces",
+    "lint": "npm run lint --workspaces",
+    "typecheck": "npm run typecheck --workspaces"
+  }
+}
