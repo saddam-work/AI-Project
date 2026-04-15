@@ -43,6 +43,22 @@ npm install
 
 If your environment is behind a corporate proxy, set `HTTPS_PROXY`/`HTTP_PROXY` correctly before installing dependencies.
 
+## Can I preview directly from GitHub?
+
+Yes — but not from GitHub repository pages alone for this app stack.
+
+- **Best option (recommended): Vercel**
+  - Import your GitHub repo in Vercel.
+  - Set Root Directory to `apps/web`.
+  - Every push/PR gets a live preview URL.
+
+- **Alternative: Netlify**
+  - Same approach: connect GitHub repo and set base directory to `apps/web`.
+
+- **GitHub Pages**
+  - Works best for static websites.
+  - This project uses Next.js app/runtime features, so GitHub Pages is not the best default preview path.
+
 ## Product Architecture
 
 ### Backend domains
