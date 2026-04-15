@@ -56,15 +56,14 @@ See: `apps/api/src/db/schema.sql`.
 ## Quick start
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev:web
 ```
 
-### Individual apps
+### Optional API start
 
 ```bash
-pnpm --filter @ai-dashboard/api dev
-pnpm --filter @ai-dashboard/web dev
+npm run dev:api
 ```
 
 ## Deployment
